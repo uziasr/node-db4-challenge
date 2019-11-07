@@ -19,7 +19,7 @@ exports.up = function(knex) {
         .onDelete('RESTRICT')
         .onUpdate('CASCADE');
         tbl
-        .integer('ingredient_id')
+        .integer('ingredients_id')
         .unsigned()
         .references('id')
         .inTable('ingredients')
